@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+    <form action="/my-page">
+      <h1>Payment form</h1>
+      <p>
+        Required fields are followed by
+        <strong><span aria-label="required">*</span></strong>
+        <section>
+          <h2>Contact information</h2>
+          <fieldset>
+            <legend>Title</legend>
+            <ul>
+              <li>
+                <label for="title_1">
+                  <input type="radio" name="title" id="title_1" value="A">
+                  Ace
+                </label>
+              </li>
+              <li>
+                <label for="title_2">
+                  <input type="radio" name="title" id="title_2" value="K">
+                  King
+                </label>
+              </li>
+              <li>
+                <label for="title_3">
+                  <input type="radio" name="title" id="title_3" value="Q">
+                  Queen
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <p>
+            <label for="name">
+              <span>Name: </span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input type="text" name="username" id="name" required>
+          </p>
+          <p>
+            <label for="mail">
+              <span>Email: </span>
+              <strong><span aria-label="required">*</span></strong>
+              <input type="email" name="user-mail" id="mail" required>
+            </label>
+          </p>
+          <p>
+            <label for="password">
+              <span>Password: </span>
+              <strong><span aria-label="required">*</span></strong>
+              <input type="password" name="user-password" id="password" required>
+            </label>
+          </p>
+        </section>
+      </p>
+    </form>
+  </body>
+</html>
